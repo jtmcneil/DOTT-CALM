@@ -1,0 +1,75 @@
+#Dott {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 2rem;
+
+    #Face {
+        /* border: 1px solid blue; */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .faceHalf {
+            /* border: 1px solid purple; */
+            padding: 2rem;
+        }
+
+        #FaceTop {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex: 2;
+
+            #Eyes {
+                /* border: 1px solid green; */
+                display: flex;
+                gap: 10rem;
+                transition: all 0.2s ease-out;
+                .eye {
+                    /* border: 1px solid yellow; */
+                    width: 2rem;
+                    height: 12rem;
+                    background-color: black;
+                    animation: blink 5s infinite;
+                }
+            }
+        }
+
+        #FaceBottom {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            #Mouth {
+                /* border: 1px solid orange; */
+                width: 30rem;
+                height: 2rem;
+                background-color: black;
+            }
+        }
+    }
+}
+
+/* Classes */
+
+.lookLeft {
+    transform: translate(-50%);
+}
+
+.lookRight {
+    transform: translate(50%);
+}
+
+/* Animations */
+
+@keyframes blink {
+    0%,
+    2%,
+    100% {
+        height: 12rem;
+    }
+    1% {
+        height: 0rem;
+    }
+}

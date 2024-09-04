@@ -1,0 +1,38 @@
+#Sidebar {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    padding-top: 2rem;
+    background-color: black;
+
+    transition: all 0.3s ease;
+
+    .nav-link {
+        position: relative;
+        font-size: 0.8rem;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        margin-bottom: 0.5rem;
+        width: fit-content;
+    }
+
+    #title {
+        font-size: 2rem;
+        background: none;
+        text-decoration: none;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    &:hover {
+        padding-left: 3rem;
+        padding-right: 2rem;
+
+        .nav-link {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+    }
+}
