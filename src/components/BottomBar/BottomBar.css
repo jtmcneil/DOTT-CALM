@@ -1,0 +1,36 @@
+#BottomBar {
+    width: 100%;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > section {
+        width: 100%;
+
+        &.right {
+            text-align: right;
+        }
+        &.center {
+            text-align: center;
+            font-size: 0.7rem;
+        }
+        &.left {
+            display: flex;
+        }
+    }
+
+    .oval {
+        flex: 1;
+        height: 0.3rem;
+        margin-right: 1rem;
+        border-radius: 1rem;
+        border: 1px dotted white;
+    }
+
+    .released {
+        color: hsl(104, 43%, 55%);
+    }
+}

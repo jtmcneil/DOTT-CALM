@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Sidebar.css";
+import "./SideBar.css";
 
-export default function Sidebar() {
+export default function SideBar() {
     return (
-        <nav id="Sidebar" className="">
+        <nav id="SideBar" className="">
             <Link to="/" id="title">
                 .calm
             </Link>

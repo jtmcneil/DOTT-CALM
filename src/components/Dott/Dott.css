@@ -32,7 +32,7 @@
                     width: 2rem;
                     height: 12rem;
                     background-color: black;
-                    animation: blink 5s infinite;
+                    animation: blink 6s 3s infinite;
                 }
             }
         }
@@ -51,14 +51,27 @@
     }
 }
 
-/* Classes */
+/* Animation Classes */
 
-.lookLeft {
-    transform: translate(-50%);
+.eye {
+    &.lookLeft {
+        transform: translate(-3rem, 0.3rem);
+    }
+    &.lookRight {
+        transform: translate(3rem);
+    }
+    &.squint {
+        scale: 1 0.8;
+    }
 }
 
-.lookRight {
-    transform: translate(50%);
+#Mouth {
+    &.lookLeft {
+        transform: translate(-1rem);
+    }
+    &.lookRight {
+        transform: translate(1rem, -1rem);
+    }
 }
 
 /* Animations */
